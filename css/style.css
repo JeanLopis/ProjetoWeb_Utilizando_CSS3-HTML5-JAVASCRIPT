@@ -1,0 +1,469 @@
+@import url(icons/css/idioma.css);
+
+
+/* GERAIS */
+
+* {
+    font-family: 'Taviraj', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #000;
+}
+
+:root {
+    --color-1: #ffffff;
+    --color-2: rgb(255, 0, 0);
+    --color-3: rgb(89, 0, 255);
+    --color-4: rgb(255, 255, 255);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+#wallpaper {
+    background-color: #000;
+
+}
+
+#wallpaper img {
+    width: 100%;
+    position: relative;
+    bottom: 80px;
+}
+
+/* CABECALHO*/
+
+#cabecalho {
+    background-color: rgba(0, 0, 0, 0.781);
+    border-radius: 50px;
+    width: 70%;
+    padding: 7px 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 16em;
+}
+
+#cabecalho .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cabecalho #logo {
+    width: 9em;
+}
+
+/* MENU */
+
+#cabecalho #menu {
+    text-align: center;
+}
+
+#cabecalho #menu li {
+    display: inline-block;
+    position: relative;
+}
+
+#cabecalho #menu li ul {
+    background-color: rgba(0, 0, 0, 0.781);
+    display: none;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#cabecalho #menu li a {
+    color: #FFF;
+    display: block;
+    transition: all 0.3s linear;
+    text-decoration: none;
+    padding: 10px 18px;
+    margin: 0 auto;
+}
+
+#cabecalho #menu li a::before {
+    font-size: 16px;
+    margin-right: 7px;
+    color: #ffffff;
+}
+
+#cabecalho #menu li a:hover {
+    background-color: rgb(236, 0, 0);
+    border-radius: 50px;
+
+}
+
+#cabecalho #menu li:hover ul {
+    display: block;
+}
+
+/* BOTAO PESQUISAR DO MENU */
+
+.seach-box {
+    position: relative;
+    border-radius: 60px;
+    padding: 0px;
+    background-color: rgb(236, 0, 0);
+}
+
+.seach-box:hover>input {
+    width: 140px;
+}
+
+.seach-box:hover>.icon-search {
+    color: rgba(255, 255, 255, 0.945);
+}
+
+.icon-search:hover {
+    transform: rotate(360deg) scale(0.8);
+}
+
+nav input {
+    width: 0;
+    border: none;
+    outline: none;
+    padding: 0;
+    background: none;
+    font-size: 0.8rem;
+    transition: 0.8s ease;
+    line-height: 40px;
+    color: rgb(255, 255, 255);
+}
+
+nav input::placeholder {
+    color: rgb(255, 255, 255);
+    padding-left: 6px;
+
+}
+
+.icon-search {
+    color: rgb(255, 255, 255);
+    float: right;
+    width: 40px;
+    font-size: 0.8rem;
+    border-radius: 50%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.479);
+}
+
+/* BANNER 01 */
+
+#banners .slider img {
+    border-radius: 20px;
+}
+
+#banners .slider {
+    border-radius: 20px;
+}
+
+#banners {
+    border-radius: 20px;
+}
+
+/* MATERIAS*/
+
+/*MATERIA 01*/
+
+#materias {
+    background-color: #3A0606;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#materias #materia_01 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    max-width: 100%;
+    margin-top: 20px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #ffffff0c;
+    border-radius: 10px;
+}
+
+#materias #materia_01 .materia_01:nth-child(1) {
+    grid-row: 1/3;
+}
+
+#materias #materia_01 img {
+    display: grid;
+    grid-column: 1;
+    grid-row: 1/3;
+    align-self: end;
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+#materias #materia_01 p {
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    text-align: justify;
+    font-size: 18px;
+    padding: 10px;
+}
+
+/* MATERIA 02 */
+
+#materias #materia_02 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-width: 100%;
+    margin-top: 20px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #00000036;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#materias #materia_02 .materia_02:nth-child(1) {
+    grid-row: 1/3;
+}
+
+#materias #materia_02 img {
+    display: grid;
+    grid-column: 1;
+    grid-row: 1/3;
+    align-self: end;
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+#materias #materia_02 p {
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    text-align: justify;
+    font-size: 18px;
+    padding: 10px;
+}
+
+
+#materias h2 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+/* FOTOS E GALERIAS */
+
+#elenco {
+    background-color: #3A0606;
+}
+
+#elenco h1 {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+    color: #FFF;
+    font-size: 35px;
+}
+
+#elenco #grid1 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    column-gap: 40px;
+    max-width: 100%;
+}
+
+#elenco #grid1 a {
+    text-decoration: none;
+}
+
+
+#elenco #grid1 img {
+    display: grid;
+    border-radius: 10px 10px 0px 0px;
+    transition: all 0.3s linear;
+    max-width: 100%;
+}
+
+#elenco #grid1 img:hover {
+    transform: scale(1.1);
+}
+
+#elenco #grid1 p,
+#elenco #grid1 h2 {
+    display: grid;
+    bottom: 60px;
+    left: 10px;
+    position: relative;
+    text-shadow: 0 0 1.2em #000, 0 0 1.2em #000, 0 0 1.2em #000;
+    color: #fff;
+    width: 8em;
+}
+
+.titulo-secao {
+    font-size: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#fotos {
+    background-color: #DDD;
+    padding: 50px 0;
+}
+
+#fotos #galeria-fotos {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 30px;
+}
+
+#fotos #galeria-fotos img {
+    display: block;
+    width: 100%;
+    transition: all 0.3s linear;
+}
+
+#fotos #galeria-fotos img:hover {
+    transform: scale(1.1);
+}
+
+/* rodape*/
+
+#rodape {
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 80px;
+    padding-top: 20px;
+}
+
+#rodape p {
+    color: var(--color-1);
+}
+
+#rodape a {
+    color: var(--color-1);
+    text-decoration: none;
+}
+
+#rodape a:hover {
+    text-decoration: underline;
+}
+
+/* PAGINAS INTERNAS */
+#temp img {
+    width: 100%;
+    position: relative;
+}
+
+#titulo {
+    color: #FFF;
+    text-align: center;
+    background-color: #0000005b;
+    padding: 40px;
+    position: relative;
+    border-radius: 20px;
+    bottom: 32em;
+}
+
+#titulo h1 {
+    font-size: 60px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+#titulo h4 {
+    font-size: 30px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+#paragrafo p {
+    text-align: justify;
+    color: rgb(255, 255, 255);
+    position: relative;
+    bottom: 200px;
+    font-size: 18px;
+
+}
+
+section #botao {
+    width: 1100px;
+    float: auto;
+    position: relative;
+    padding-left: 22em;
+    bottom: 8em;
+}
+
+section #botao input {
+    background: #F63D3D;
+    background-image: -webkit-linear-gradient(top, #F63D3D, #561919);
+    background-image: -moz-linear-gradient(top, #F63D3D, #561919);
+    background-image: -ms-linear-gradient(top, #F63D3D, #561919);
+    background-image: -o-linear-gradient(top, #F63D3D, #561919);
+    background-image: -webkit-gradient(to bottom, #F63D3D, #561919);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    height: 6px;
+    line-height: 6px;
+    color: #FFFFFF;
+    font-family: Trebuchet MS;
+    width: 500px;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 35px;
+    -webkit-box-shadow: 1px 1px 20px 0 #000000;
+    -moz-box-shadow: 1px 1px 20px 0 #000000;
+    box-shadow: 1px 1px 20px 0 #000000;
+    text-shadow: 1px 1px 20px #000000;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+#botao input:hover {
+    border: solid #000000 1px;
+    background: #561919;
+    background-image: -webkit-linear-gradient(top, #561919, #3A0606);
+    background-image: -moz-linear-gradient(top, #561919, #3A0606);
+    background-image: -ms-linear-gradient(top, #561919, #3A0606);
+    background-image: -o-linear-gradient(top, #561919, #3A0606);
+    background-image: -webkit-gradient(to bottom, #561919, #3A0606);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#video {
+    background-color: #000;
+    position: relative;
+    bottom: 10vh;
+}
+
+#video iframe {
+    max-width: 800px;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto;
+}
+
+#video .titulo-secao {
+    color: var(--color-4);
+}
+
+section .grid-video {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    width: 100%;
+}

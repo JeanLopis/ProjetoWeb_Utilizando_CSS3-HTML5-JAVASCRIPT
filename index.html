@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Peaky Blinders</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site construído na aula da disciplina de Introdução à Web">
+    <meta name="keywords" content="apple, iphone, smartphone">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="shortcut icon" href="/imagens/icon_peaky.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="plugins/jquery.bxslider.css">
+    <link rel="stylesheet" href="plugins/magnific-popup.css">
+    <script src="plugins/jquery.min.js"></script>
+    <script src="plugins/jquery.bxslider.min.js"></script>
+    <script src="plugins/jquery.magnific-popup.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.slider').bxSlider({
+                mode: 'horizontal',
+                captions: true,
+                //slideWidth: 800,
+                auto: true,
+                pager: true,
+                //speed: 100,
+                //controls: true
+            });
+
+            $('#galeria-fotos, .galeria-elenco').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                closeOnContentClick: false,
+                closeBtnInside: false,
+                mainClass: 'mfp-with-zoom mfp-img-mobile',
+                image: {
+                    verticalFit: true,
+                    titleSrc: function (item) {
+                        return item.el.attr('title');
+                    }
+                },
+                gallery: {
+                    enabled: true
+                },
+                zoom: {
+                    enabled: true,
+                    duration: 300, // don't foget to change the duration also in CSS
+                    opener: function (element) {
+                        return element.find('img');
+                    }
+                }
+
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <section>
+        <div id="wallpaper">
+            <img src="imagens/wallpaper_01.png">
+        </div>
+        <header id="cabecalho">
+            <div class="container">
+                <a href="#"><img src="imagens/peaky_blinders.png" id="logo"></a>
+                <nav id="menu">
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="internas/1_temporada.html#temp">Resumo Temp</a>
+                            <ul>
+                                <li><a href="internas/1_temporada.html#temp">1ª Temporada</a></li>
+                                <li><a href="internas/2_temporada.html#temp">2ª Temporada</a></li>
+                                <li><a href="internas/3_temporada.html#temp">3ª Temporada</a></li>
+                                <li><a href="internas/4_temporada.html#temp">4ª Temporada</a></li>
+                                <li><a href="internas/5_temporada.html#temp">5ª Temporada</a></li>
+                        </li>
+                    </ul>
+                    <li><a href="#fotos">Fotos</a></li>
+                    <li><a href="#elenco">Elenco</a></li>
+                    <li><a href="https://peakyblinders.tv/" target="_blank">Site oficial</a></li>
+                    <li>
+                        <div class="seach-box">
+                            <input type="text" placeholder="pesquisar"><span href="" class="icon-search"></span>
+                        </div>
+                    </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </section>
+    <section id="banners">
+        <div class="container">
+            <ul class="slider">
+                <li><img src="imagens/banners/banner_01.jpg"></li>
+                <li><img src="imagens/banners/banner_02.jpg"></li>
+                <li><img src="imagens/banners/banner_03.jpg"></li>
+            </ul>
+        </div>
+    </section>
+    <section id="materias">
+        <div class="container">
+            <div>
+                <div id="materia_01">
+                    <div class="materia_01">
+                        <h2>Fãs de Peaky Blinders ficaram incomodados <br> com cena da nova temporada</h2>
+                        <p>Uma cena de sexo na sexta temporada incomodou parte dos fãs de Peaky Blinders, assim que a
+                            série estreou na Netflix, sexta-feira passada (10/06).
+                            O momento aconteceu no quarto episódio, intitulado “Sapphire” (exibido originalmente para o
+                            Reino Unido, pela BBC, no dia 20 de março). Nele, a personagem Gina Gray tem um encontro
+                            secreto com o Oswald Mosley.
+                            Sabendo do encontro, Tommy coloca espiões para descobrirem o que os dois conversariam em tal
+                            encontro. Porém, a verdade é que os dois estavam mais interessados em se divertir, traindo
+                            as pessoas com quem estavam comprometidos.
+                            Assim que Mosley vai embora, Tommy entra no local para pegar Gina no flagra e avisa a ela
+                            que sabe de tudo. Em troca de não contar a Michael, Tommy ordena que Gina seja sua
+                            infiltrada em Berlim quando Mosley for se reunir com a cúlpula do governo alemão.</p>
+                    </div>
+                    <div class="materia_01"><img src="imagens/materia_01.jpg">
+                    </div>
+                </div>
+                <div>
+                    <div id="materia_02">
+                        <div class="materia_02"><img src="imagens/materia_02.jpg">
+                        </div>
+                        <div class="materia_02">
+                            <h2>Peaky Blinders estreia em 1º lugar na Netflix</h2>
+                            <p>A sexta e última temporada de Peaky Blinders chegou ao Brasil na última sexta-feira, dia
+                                10, pela Netflix e já conseguiu um feito incrível. A série se tornou primeiro lugar no
+                                Top 10 do streaming naquele mesmo dia.
+                                Apesar de lançada entre fevereiro e abril (um episódio por semana) no Reino Unido, a
+                                obra só teve seus últimos seis capítulos para o restante do mundo agora em junho. Isso
+                                porque a BBC, por ser produtora da obra, dá prioridade ao lançamento no Reino Unido,
+                                enquanto o resto do mundo é obrigado a esperar um pouco.
+                                Dessa forma, é muito comum que boa parte dos fãs já assista à obra anteriormente por
+                                meios ilegais.
+                                Mas isso não ocorreu com Peaky Blinders na Netflix, e a prova disso está na altíssima
+                                quantidade de acessos no primeiro dia de exibição. Como um dos países que mais consome a
+                                série no mundo...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="fotos">
+        <div class="container">
+            <h2 class="titulo-secao"> Galeria Malditos Peaky Blinders</h2>
+            <div id="galeria-fotos">
+                <a href="imagens/fotos/fotosg/foto01.jpg" title="Foto 01"><img src="imagens/fotos/fotosp/foto01.jpg"
+                        alt=""></a>
+                <a href="imagens/fotos/fotosg/foto02.jpg" title="Foto 02"><img src="imagens/fotos/fotosp/foto02.jpg"
+                        alt=""></a>
+                <a href="imagens/fotos/fotosg/foto03.jpg" title="Foto 03"><img src="imagens/fotos/fotosp/foto03.jpg"
+                        alt=""></a>
+                <a href="imagens/fotos/fotosg/foto04.jpg" title="Foto 04"><img src="imagens/fotos/fotosp/foto04.jpg"
+                        alt=""></a>
+                <a href="imagens/fotos/fotosg/foto05.jpg" title="Foto 05"><img src="imagens/fotos/fotosp/foto05.jpg"
+                        alt=""></a>
+                <a href="imagens/fotos/fotosg/foto06.jpg" title="Foto 06"><img src="imagens/fotos/fotosp/foto06.jpg"
+                        alt=""></a>
+                <a href="imagens/fotos/fotosg/foto07.jpg" title="Foto 07"><img src="imagens/fotos/fotosp/foto07.jpg"
+                        alt=""></a>
+                <a href="imagens/fotos/fotosg/foto08.jpg" title="Foto 08"><img src="imagens/fotos/fotosp/foto08.jpg"
+                        alt=""></a>
+            </div>
+        </div>
+    </section>
+    <section id="elenco">
+        <div class="container">
+            <h1>Elenco</h1>
+            <div id="galeria-fotos" class="galeria-elenco">
+                <div id="grid1">
+                    <div class="atores"><a href="imagens/fotos/fotos_elenco/fotosg/01.jpg"><img
+                                src="imagens/fotos/fotos_elenco/fotosp/01.jpg">
+                            <h2>Thomas Shelby</h2>
+                            <p>Cillian Murphy</p>
+                        </a></div>
+                    <div class="atores"><a href="imagens/fotos/fotos_elenco/fotosg/02.jpg"><img
+                                src="imagens/fotos/fotos_elenco/fotosp/02.jpg">
+                            <h2>Polly Gray</h2>
+                            <p>Helen McCrory</p>
+                        </a></div>
+                    <div class="atores"><a href="imagens/fotos/fotos_elenco/fotosg/03.jpg"><img
+                                src="imagens/fotos/fotos_elenco/fotosp/03.jpg">
+                            <h2>Arthur Shelby</h2>
+                            <p>Paul Anderson</p>
+                        </a></div>
+                    <div class="atores"><a href="imagens/fotos/fotos_elenco/fotosg/04.jpg"><img
+                                src="imagens/fotos/fotos_elenco/fotosp/04.jpg">
+                            <h2>John Shelby</h2>
+                            <p>Joe Cole</p>
+                        </a></div>
+                    <div class="atores"><a href="imagens/fotos/fotos_elenco/fotosg/05.jpg"><img
+                                src="imagens/fotos/fotos_elenco/fotosp/05.jpg">
+                            <h2>Ada Shelby</h2>
+                            <p>Sophie Rundle</p>
+                        </a></div>
+                    <div class="atores"><a href="imagens/fotos/fotos_elenco/fotosg/06.jpg"><img
+                                src="imagens/fotos/fotos_elenco/fotosp/06.jpg">
+                            <h2>Finn Shelby</h2>
+                            <p>Harry Kirton</p>
+                        </a></div>
+                    <div class="atores"><a href="imagens/fotos/fotos_elenco/fotosg/07.jpg"><img
+                                src="imagens/fotos/fotos_elenco/fotosp/07.jpg">
+                            <h2>Michael Gray</h2>
+                            <p>Finn Cole</p>
+                        </a></div>
+                    <div class="atores"><a href="imagens/fotos/fotos_elenco/fotosg/08.jpg"><img
+                                src="imagens/fotos/fotos_elenco/fotosp/08.jpg">
+                            <h2>Grace Burgess</h2>
+                            <p>Annabelle Wallis</p>
+                        </a></div>
+                    <div class="atores"><a href="imagens/fotos/fotos_elenco/fotosg/09.jpg"><img
+                                src="imagens/fotos/fotos_elenco/fotosp/09.jpg">
+                            <h2>Alfie Solomons</h2>
+                            <p>Tom Hardy</p>
+                        </a></div>
+                    <div class="atores"><a href="imagens/fotos/fotos_elenco/fotosg/10.jpg"><img
+                                src="imagens/fotos/fotos_elenco/fotosp/10.jpg">
+                            <h2>Chester Cabel</h2>
+                            <p>Sam Neill</p>
+                        </a></div>
+                    <div class="atores"><a href="imagens/fotos/fotos_elenco/fotosg/11.jpg"><img
+                                src="imagens/fotos/fotos_elenco/fotosp/11.jpg">
+                            <h2>Luca Changretta</h2>
+                            <p>Adrian Brody</p>
+                        </a></div>
+                    <div class="atores"><a href="imagens/fotos/fotos_elenco/fotosg/12.jpg"><img
+                                src="imagens/fotos/fotos_elenco/fotosp/12.jpg">
+                            <h2>Oswald Mosley</h2>
+                            <p>Sam Claflin</p>
+                        </a></div>
+                    <div class="atores"><a href="imagens/fotos/fotos_elenco/fotosg/13.jpg"><img
+                                src="imagens/fotos/fotos_elenco/fotosp/13.jpg">
+                            <h2>Aberama Gold</h2>
+                            <p>Aidan Gillen</p>
+                        </a></div>
+                    <div class="atores"><a href="imagens/fotos/fotos_elenco/fotosg/14.jpg"><img
+                                src="imagens/fotos/fotos_elenco/fotosp/14.jpg">
+                            <h2>Gina Gray</h2>
+                            <p>Anya Taylor</p>
+                        </a></div>
+                    <div class="atores"><a href="imagens/fotos/fotos_elenco/fotosg/15.jpg"><img
+                                src="imagens/fotos/fotos_elenco/fotosp/15.jpg">
+                            <h2>Charlie Strong</h2>
+                            <p>Ned Dennehy</p>
+                        </a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="rodape">
+        <p>Site construído na aula da disciplina de Introdução à Tecnologia à Tecnologia Web do 1º périodo do <br> curso de
+            Sistema de Informação do UniRios.  Por Jean Cezar orientado pelo Professor Edemilton</p>
+        <p><a href="http://www.unirios.edu.br">UniRios - Centro Universitário do Rio São Francisco</a></p>
+    </footer>
+</body>
+
+</html>

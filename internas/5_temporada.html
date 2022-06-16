@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Peaky Blinders</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site construído na aula da disciplina de Introdução à Web">
+    <meta name="keywords" content="apple, iphone, smartphone">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mobile.css">
+    <link rel="shortcut icon" href="../imagens/icon_peaky.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../plugins/jquery.bxslider.css">
+    <link rel="stylesheet" href="../plugins/magnific-popup.css">
+    <script src="../plugins/jquery.min.js"></script>
+    <script src="../plugins/jquery.bxslider.min.js"></script>
+    <script src="../plugins/jquery.magnific-popup.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.slider').bxSlider({
+                mode: 'horizontal',
+                captions: true,
+                //slideWidth: 800,
+                auto: true,
+                pager: true,
+                //speed: 100,
+                //controls: true
+            });
+
+            $('#galeria-fotos').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                closeOnContentClick: false,
+                closeBtnInside: false,
+                mainClass: 'mfp-with-zoom mfp-img-mobile',
+                image: {
+                    verticalFit: true,
+                    titleSrc: function (item) {
+                        return item.el.attr('title');
+                    }
+                },
+                gallery: {
+                    enabled: true
+                },
+                zoom: {
+                    enabled: true,
+                    duration: 300, // don't foget to change the duration also in CSS
+                    opener: function (element) {
+                        return element.find('img');
+                    }
+                }
+
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <section>
+        <div id="wallpaper">
+            <img src="../imagens/wallpaper_01.png">
+        </div>
+        <header id="cabecalho">
+            <div class="container">
+                <a href="../index.html"><img src="../imagens/peaky_blinders.png" id="logo"></a>
+                <nav id="menu">
+                    <ul>
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="#temp">Resumo Temp</a>
+                            <ul>
+                                <li>
+                                <li><a href="../internas/1_temporada.html#temp">1ªTemporada</a></li>
+                                <li><a href="../internas/2_temporada.html#temp">2ªTemporada</a></li>
+                                <li><a href="../internas/3_temporada.html#temp">3ªTemporada</a></li>
+                                <li><a href="../internas/4_temporada.html#temp">4ªTemporada</a></li>
+                                <li><a href="#temp">5ªTemporada</a></li>
+                        </li>
+                    </ul>
+                    <li><a href="../index.html#fotos">Fotos</a></li>
+                    <li><a href="../index.html#elenco">Elenco</a></li>
+                    <li><a href="https://peakyblinders.tv/" target="_blank">Site oficial</a></li>
+                    <li>
+                        <div class="seach-box">
+                            <input type="text" placeholder="pesquisar"><span href="##" class="icon-search"></span>
+                        </div>
+                    </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </section>
+    <div id="temp">
+        <img src="../imagens/internas_05.jpg" alt="">
+    </div>
+    <section id="temp">
+        <div class="container">
+            <div id="titulo">
+                <h1>Temporada 5</h1>
+                <h3>____________________________________________________________________________</h3>
+                <br>
+                <h4>Às vezes, a morte é uma bondade.</h4>
+            </div>
+            <div id="paragrafo">
+                <p> O mundo foi lançado em turbulência pela quebra de Wall Street de 1929. Oportunidade e infortúnio
+                    estão em toda parte. Quando o deputado Thomas Shelby é abordado por um político carismático com uma
+                    visão ousada para a Grã-Bretanha, ele percebe que sua resposta afetará não apenas o futuro de sua
+                    própria família, mas o de toda a nação. Mas enquanto se prepara para sabotar a nova força das trevas
+                    que ameaça a Grã-Bretanha, Tommy enfrenta seus próprios demônios…
+
+                    A quinta temporada deu as boas-vindas a Anya Taylor-Joy ( Emma ), Brian Gleeson ( Amor/Ódio) e Sam
+                    Claflin ( Jogos Vorazes) como o político fascista Sir Oswald Mosley, e contou com uma trilha sonora
+                    empolgante da aclamada música Anna Calvi.
+
+                    Steven Knight diz: “A quinta temporada foi sobre como a família Shelby se tornou parte da história.
+                    Foi também sobre a ascensão do fascismo. Tommy enfrenta um mal que mesmo ele não consegue
+                    reconciliar e tenta colocar suas consideráveis ​​habilidades políticas para derrotá-lo. Mas Tommy
+                    não é um bom homem e a linha entre o bem e o mal é algo que ele precisa descobrir. Nesta série, eu
+                    queria sugerir pela primeira vez que Tommy pode até acreditar que ele tem uma chance de redenção, e
+                    que a redenção pode até significar algo para ele. Ele também descobre que ama sua esposa e que seus
+                    filhos são uma razão para continuar vivendo. Bem-vindo, Tommy, à margem da raça humana.
+                </p>
+            </div>
+            <div id="botao">
+                <a href="https://peakyblinders.tv/watch-now/season-5/" target="_blank"><input type="button" value="ASSISTA AQUI!"></a>
+            </div>
+        </div>
+    </section>
+    <section id="video">
+        <div class="container">
+            <h2 class="titulo-secao">Teasers 5ª Temporada</h2>
+            <div class="grid-video">
+                <iframe src="https://www.youtube.com/embed/Uv8bfaxl9j4" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/kEkyMNZhN6k" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/bTvxRrUK5aE" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <footer id="rodape">
+        <p>Site construído na aula da disciplina de Introdução à Tecnologia à Tecnologia Web do 1º périodo do <br> curso de
+            Sistema de Informação do UniRios.  Por Jean Cezar orientado pelo Professor Edemilton</p>
+        <p><a href="http://www.unirios.edu.br">UniRios - Centro Universitário do Rio São Francisco</a></p>
+    </footer>
+</body>
+
+</html>

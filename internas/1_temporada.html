@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Peaky Blinders</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site construído na aula da disciplina de Introdução à Web">
+    <meta name="keywords" content="apple, iphone, smartphone">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mobile.css">
+    <link rel="shortcut icon" href="../imagens/icon_peaky.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../plugins/jquery.bxslider.css">
+    <link rel="stylesheet" href="../plugins/magnific-popup.css">
+    <script src="../plugins/jquery.min.js"></script>
+    <script src="../plugins/jquery.bxslider.min.js"></script>
+    <script src="../plugins/jquery.magnific-popup.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.slider').bxSlider({
+                mode: 'horizontal',
+                captions: true,
+                //slideWidth: 800,
+                auto: true,
+                pager: true,
+                //speed: 100,
+                //controls: true
+            });
+
+            $('#galeria-fotos').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                closeOnContentClick: false,
+                closeBtnInside: false,
+                mainClass: 'mfp-with-zoom mfp-img-mobile',
+                image: {
+                    verticalFit: true,
+                    titleSrc: function (item) {
+                        return item.el.attr('title');
+                    }
+                },
+                gallery: {
+                    enabled: true
+                },
+                zoom: {
+                    enabled: true,
+                    duration: 300, // don't foget to change the duration also in CSS
+                    opener: function (element) {
+                        return element.find('img');
+                    }
+                }
+
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <section>
+        <div id="wallpaper">
+            <img src="../imagens/wallpaper_01.png">
+        </div>
+        <header id="cabecalho">
+            <div class="container">
+                <a href="../index.html"><img src="../imagens/peaky_blinders.png" id="logo"></a>
+                <nav id="menu">
+                    <ul>
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="#temp">Resumo Temp</a>
+                            <ul>
+                                <li>
+                                <li><a href="#temp">1ªTemporada</a></li>
+                                <li><a href="../internas/2_temporada.html#temp">2ªTemporada</a></li>
+                                <li><a href="../internas/3_temporada.html#temp">3ªTemporada</a></li>
+                                <li><a href="../internas/4_temporada.html#temp">4ªTemporada</a></li>
+                                <li><a href="../internas/5_temporada.html#temp">5ªTemporada</a></li>
+                        </li>
+                    </ul>
+                    <li><a href="../index.html#fotos">Fotos</a></li>
+                    <li><a href="../index.html#elenco">Elenco</a></li>
+                    <li><a href="https://peakyblinders.tv/" target="_blank">Site oficial</a></li>
+                    <li>
+                        <div class="seach-box">
+                            <input type="text" placeholder="pesquisar"><span href="##" class="icon-search"></span>
+                        </div>
+                    </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </section>
+    <div id="temp">
+        <img src="../imagens/internas_01.jpeg" alt="">
+    </div>
+    <section id="temp">
+        <div class="container">
+            <div id="titulo">
+                <h1>Temporada 1</h1>
+                <h3>____________________________________________________________________________</h3>
+                <br>
+                <h4>O crime paga bem. O negócio paga melhor.</h4>
+            </div>
+            <div id="paragrafo">
+                <p> Small Heath, Birmingham, 1919. Thomas Shelby (Cillian Murphy, A Origem ) e sua família comandam a
+                    gangue
+                    local mais temida e poderosa, os Peaky Blinders. Nomeados por sua prática de costurar lâminas de
+                    barbear
+                    nos picos de seus bonés, eles ganham dinheiro com apostas ilegais, proteção e mercado negro.
+
+                    Mas as ambições de Tommy vão além de correr nas ruas, e quando um caixote de armas desaparece de uma
+                    fábrica de armas, ele reconhece uma oportunidade de subir no mundo. Como gangues rivais,
+                    revolucionários
+                    comunistas e fenianos do IRA descem a Small Heath em busca das armas; Winston Churchill despacha um
+                    implacável chefe de polícia de Belfast para impor ordem a uma cidade cada vez mais sem lei e
+                    recuperar
+                    as armas.
+
+                    Com um elenco estelar que inclui Sam Neill ( Jurassic Park ), Helen McCrory ( Harry Potter e o
+                    Enigma do
+                    Príncipe ), Paul Anderson ( The Revenant ), Annabelle Wallis ( The Loudest Voice ), Joe Cole (
+                    Oração
+                    antes do Amanhecer ) e Sophie Rundle ( Gentleman Jack ), Benjamin Zephaniah e Natasha O'Keeffe (
+                    Filth
+                    ). A primeira temporada gerou um tipo inteiramente novo de drama em um público desavisado em
+                    setembro de
+                    2013.
+
+                    O escritor e criador Steven Knight diz: “A primeira temporada levantou a tampa de um mundo não
+                    descoberto e esquecido pela história, mas vivo e chutando na tradição oral. Eu garimpei as memórias
+                    de
+                    parentes sobre as ruas sem lei de Small Heath Birmingham, governadas por gângsteres, abaladas por
+                    guerras territoriais, governadas pelos Peaky Blinders. Tommy Shelby chegou em um cavalo preto. Ele
+                    lutou
+                    contra memórias de guerra, gangues de Londres e seu próprio pai, bem como o indomável Major Campbell
+                    do
+                    Special Branch. Ele também encontrou Grace e encontrou o amor. A primeira temporada foi sobre
+                    destruir o
+                    modelo do drama de época britânico. A música pegou muita gente de surpresa e surpreender é bom.”
+                </p>
+            </div>
+            <div id="botao">
+                <a href="https://peakyblinders.tv/watch-now/season-1/" target="_blank"><input type="button" value="ASSISTA AQUI!"></a>
+            </div>
+        </div>
+    </section>
+    <section id="video">
+        <div class="container">
+            <h2 class="titulo-secao">Teasers 1ª Temporada</h2>
+            <div class="grid-video">
+                <iframe src="https://www.youtube.com/embed/QxjjcQdRrGA" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/JwXfVGjSz-4" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/oVzVdvGIC7U" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <footer id="rodape">
+        <p>Site construído na aula da disciplina de Introdução à Tecnologia à Tecnologia Web do 1º périodo do <br> curso de
+            Sistema de Informação do UniRios.  Por Jean Cezar orientado pelo Professor Edemilton</p>
+        <p><a href="http://www.unirios.edu.br">UniRios - Centro Universitário do Rio São Francisco</a></p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Peaky Blinders</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site construído na aula da disciplina de Introdução à Web">
+    <meta name="keywords" content="apple, iphone, smartphone">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mobile.css">
+    <link rel="shortcut icon" href="../imagens/icon_peaky.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../plugins/jquery.bxslider.css">
+    <link rel="stylesheet" href="../plugins/magnific-popup.css">
+    <script src="../plugins/jquery.min.js"></script>
+    <script src="../plugins/jquery.bxslider.min.js"></script>
+    <script src="../plugins/jquery.magnific-popup.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.slider').bxSlider({
+                mode: 'horizontal',
+                captions: true,
+                //slideWidth: 800,
+                auto: true,
+                pager: true,
+                //speed: 100,
+                //controls: true
+            });
+
+            $('#galeria-fotos').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                closeOnContentClick: false,
+                closeBtnInside: false,
+                mainClass: 'mfp-with-zoom mfp-img-mobile',
+                image: {
+                    verticalFit: true,
+                    titleSrc: function (item) {
+                        return item.el.attr('title');
+                    }
+                },
+                gallery: {
+                    enabled: true
+                },
+                zoom: {
+                    enabled: true,
+                    duration: 300, // don't foget to change the duration also in CSS
+                    opener: function (element) {
+                        return element.find('img');
+                    }
+                }
+
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <section>
+        <div id="wallpaper">
+            <img src="../imagens/wallpaper_01.png">
+        </div>
+        <header id="cabecalho">
+            <div class="container">
+                <a href="../index.html"><img src="../imagens/peaky_blinders.png" id="logo"></a>
+                <nav id="menu">
+                    <ul>
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="#temp">Resumo Temp</a>
+                            <ul>
+                                <li>
+                                <li><a href="../internas/1_temporada.html#temp">1ªTemporada</a></li>
+                                <li><a href="#temp">2ªTemporada</a></li>
+                                <li><a href="../internas/3_temporada.html#temp">3ªTemporada</a></li>
+                                <li><a href="../internas/4_temporada.html#temp">4ªTemporada</a></li>
+                                <li><a href="../internas/5_temporada.html#temp">5ªTemporada</a></li>
+                        </li>
+                    </ul>
+                    <li><a href="../index.html#fotos">Fotos</a></li>
+                    <li><a href="../index.html#elenco">Elenco</a></li>
+                    <li><a href="https://peakyblinders.tv/" target="_blank">Site oficial</a></li>
+                    <li>
+                        <div class="seach-box">
+                            <input type="text" placeholder="pesquisar"><span href="##" class="icon-search"></span>
+                        </div>
+                    </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </section>
+    <div id="temp">
+        <img src="../imagens/internas_02.jpg" alt="">
+    </div>
+    <section id="temp">
+        <div class="container">
+            <div id="titulo">
+                <h1>Temporada 2</h1>
+                <h3>____________________________________________________________________________</h3>
+                <br>
+                <h4>Hora de ganhar dinheiro de verdade..</h4>
+            </div>
+            <div id="paragrafo">
+                <p> À medida que a década de 1920 começa a rugir, os negócios estão crescendo para a gangue Peaky
+                    Blinders. O chefe do crime Thomas Shelby começa a expandir suas operações criminosas para Londres, e
+                    sua ascensão coloca ele e sua família em contato com novos mundos de hedonismo e excesso. Enquanto
+                    isso, um velho inimigo voltou para Small Heath, Birmingham, com a intenção de vingança. Logo, Shelby
+                    descobre que foi escolhido para desempenhar um papel em uma operação paramilitar secreta – um papel
+                    que provavelmente levará à sua própria morte.
+
+                    Dando as boas-vindas ao elenco Charlotte Riley ( Easy Virtue ), Noah Taylor ( Game of Thrones ),
+                    Finn Cole ( Animal Kingdom ) e Tom Hardy ( The Dark Knight Rises ) como o inimitável Alfie Solomons,
+                    a segunda temporada provou quantas histórias ainda havia para contar sobre Tommy Shelby e sua
+                    família, vivendo nestes tempos extraordinários.
+
+                    Steven Knight diz: “A segunda temporada viu a família Shelby começar a expandir seu império e
+                    espalhar sua influência pelos corredores do poder. O treinador de cavalos da sociedade, May Carlton,
+                    chamou a atenção de Tommy, mas Grace ainda segurou seu coração. Esta temporada foi sobre amor, bom e
+                    ruim e distorcido por reconhecimento. Polly encontra um filho e mata um homem. Major Campbell morre
+                    e Tommy sai de seu próprio túmulo para continuar, um homem além da morte. Foi quando Peaky atingiu
+                    seu passo porque se tornou sobre pessoas que são verdadeiramente vítimas de seu próprio destino
+                    selvagem e desconhecido, em vez de suas próprias decisões ou sua própria história. Todos nós
+                    queremos estar nessa posição, eu acho.”
+                </p>
+            </div>
+            <div id="botao">
+                <a href="https://peakyblinders.tv/watch-now/season-2/" target="_blank"><input type="button" value="ASSISTA AQUI!"></a>
+            </div>
+        </div>
+    </section>
+    <section id="video">
+        <div class="container">
+            <h2 class="titulo-secao">Teasers 2ª Temporada</h2>
+            <div class="grid-video">
+                <iframe src="https://www.youtube.com/embed/uIJ07Wg5i0k" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/93HRXc0FvqM" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/2n_3V5zsyIw" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <footer id="rodape">
+        <p>Site construído na aula da disciplina de Introdução à Tecnologia à Tecnologia Web do 1º périodo do <br> curso de
+            Sistema de Informação do UniRios.  Por Jean Cezar orientado pelo Professor Edemilton</p>
+        <p><a href="http://www.unirios.edu.br">UniRios - Centro Universitário do Rio São Francisco</a></p>
+    </footer>
+</body>
+
+</html>
